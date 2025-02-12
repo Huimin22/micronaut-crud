@@ -12,6 +12,15 @@ jobs:
   test-and-build:
     runs-on: ubuntu-latest
 
+    services:
+      mysql:
+        image: mysql:8
+        ports:
+          - 3306:3306
+        env:
+          MYSQL_ROOT_PASSWORD: password
+          MYSQL_DATABASE: testdb
+        
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
