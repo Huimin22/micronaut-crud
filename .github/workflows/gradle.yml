@@ -19,7 +19,7 @@ jobs:
           - 3306:3306
         env:
           MYSQL_ROOT_PASSWORD: password
-          MYSQL_DATABASE: testdb
+          MYSQL_DATABASE: mn_playground
         
     steps:
       - name: Checkout code
