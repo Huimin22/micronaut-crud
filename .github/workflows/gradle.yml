@@ -55,8 +55,4 @@ jobs:
           name: my-app
           path: build/libs/*.jar 
 
-      - name: Publish package
-        run: gradle publish
-        env:
-            USERNAME: ${{ secrets.USERNAME }}
-            TOKEN: ${{ secrets.CLASSIC_TOKEN }}
+    
