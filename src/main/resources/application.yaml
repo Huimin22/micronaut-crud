@@ -4,8 +4,8 @@ micronaut:
 datasources:
   default:
     url: jdbc:mysql://localhost:3306/mn_playground
-    username: root
-    password: password
+    username: testuser
+    password: testpassword
     driver-class-name: com.mysql.cj.jdbc.Driver
 flyway:
   datasources:
