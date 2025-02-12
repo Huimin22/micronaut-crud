@@ -6,7 +6,6 @@ plugins {
     id("maven-publish")
 }
 
-version = "0.1"
 version = "0.1-${System.currentTimeMillis()}"
 group = "com.piyal"
 
